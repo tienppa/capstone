@@ -1,0 +1,27 @@
+.quiz-layout__container {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 4fr;
+	min-height: 600px;
+	background-color: #f6f7fb;
+}
+.quiz-layout__menu {
+	width: 100%;
+	padding: 10px 0 0 10px;
+}
+.quiz-layout__content {
+	width: 100%;
+	padding: 10px 25px;
+}
+.tag-link {
+	min-width: 120px;
+}
+@media screen and (max-width: 1023px) {
+	.quiz-layout__container {
+		grid-template-columns: 1fr;
+		grid-gap: 20px;
+	}
+	.quiz-layout__menu {
+		padding: 10px;
+	}
+}

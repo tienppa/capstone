@@ -1,0 +1,42 @@
+.author-card__cover {
+	width: 100%;
+}
+.author-card {
+	border-radius: 5px;
+	margin-bottom: 15px;
+	background-color: #ffffff;
+}
+.author-card:hover {
+	box-shadow: 0 10px 10px -5px #cedaf3;
+}
+.author-card__footer {
+	display: grid;
+	grid-template-columns: 85% 15%;
+}
+.author-card__date {
+	color: #6b87bc;
+}
+.author-card__group {
+	z-index: 1000 !important;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.author-card__group > span {
+	cursor: pointer;
+	font-size: 15px;
+	font-weight: 500;
+}
+.author-card__group > span:hover {
+	color: #108ee9;
+	transform: translateY(2px);
+}
+.card-question__option-item {
+	display: block;
+	padding: 0 20px;
+}
+@media screen and (max-width: 767px) {
+	.author-card__footer {
+		grid-template-columns: 80% 20%;
+	}
+}

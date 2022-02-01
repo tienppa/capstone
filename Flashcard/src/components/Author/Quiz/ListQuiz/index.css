@@ -1,0 +1,36 @@
+.all-quiz__container {
+	width: 100%;
+	padding: 10px;
+}
+.all-quiz__subject-title {
+	display: block;
+	font-size: 16px;
+	font-weight: 500;
+	margin-bottom: 15px;
+}
+.all-quiz__wrap {
+	width: 100%;
+}
+.all-quiz__card {
+	border: 5px;
+	margin-bottom: 15px;
+	position: relative;
+}
+.all-quiz__card:hover {
+	box-shadow: 0 10px 10px -5px #cedaf3;
+	cursor: pointer;
+}
+.all-quiz__card:hover .all-quiz__button-wrap {
+	display: block;
+}
+.all-quiz__button-wrap {
+	position: absolute;
+	top: 100%;
+	right: 0;
+	transform: translateX(-100%);
+	transform: translateY(-100%);
+	display: none;
+}
+.all-quiz__buttons {
+	max-width: 200px;
+}

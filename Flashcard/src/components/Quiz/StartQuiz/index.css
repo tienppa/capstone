@@ -1,0 +1,24 @@
+.quiz-layout__content-main {
+	width: 100%;
+}
+.quiz-layout__content-start {
+	width: 75%;
+	padding: 5px;
+}
+.quiz-layout__content-start--menu {
+	background-color: #fff;
+	border-radius: 5px;
+	max-width: 1000px;
+}
+.quiz-layout__content-start--menu:hover {
+	box-shadow: 0 10px 10px -5px #cedaf3;
+}
+@media screen and (max-width: 1279px) {
+	.quiz-layout__content-start {
+		padding: 0;
+	}
+	.quiz-layout__content-start {
+		width: 100%;
+		padding: 0;
+	}
+}

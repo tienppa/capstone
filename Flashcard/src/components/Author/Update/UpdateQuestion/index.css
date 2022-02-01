@@ -1,0 +1,36 @@
+.dynamic-wrap {
+	width: 50px;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	align-items: baseline;
+	position: absolute;
+	top: 0;
+	right: 50px;
+}
+.dynamic-checkbox {
+	margin-right: 10px;
+}
+.dynamic-delete-button {
+	color: red;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+.dynamic-delete-button:hover {
+	color: #777;
+}
+.dynamic-delete-button[disabled] {
+	cursor: not-allowed;
+	opacity: 0.5;
+}
+.tooltip-icon {
+	font-weight: bold;
+	font-size: 16px;
+	margin-left: 20px;
+}
+@media screen and (max-width: 767px) {
+	.dynamic-wrap {
+		position: relative;
+		left: 0px;
+	}
+}

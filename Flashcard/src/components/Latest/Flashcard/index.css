@@ -1,0 +1,7 @@
+.flashcard__content-card {
+	width: 100%;
+	max-width: 950px;
+	min-height: 138px;
+	margin-bottom: 15px;
+	border-radius: 5px;
+}

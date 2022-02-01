@@ -1,0 +1,12 @@
+.author-list__footer {
+	display: grid;
+	grid-template-columns: 85% 15%;
+}
+.author-list__footer-tools > span:first-child {
+	margin-right: 20px;
+}
+.author-list__footer-tools > span:hover {
+	color: #4257b2;
+	font-size: 16px;
+	transform: translateY(1px);
+}

@@ -1,0 +1,29 @@
+.ldonor__container {
+	min-height: 500px;
+	display: grid;
+	grid-template-columns: 1fr 3fr 1fr;
+	padding: 20px 0;
+}
+.ldonor__menu {
+	width: 100%;
+	padding: 0 0 0 10px;
+	background-color: #f6f7fb;
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+}
+.ldonor__main {
+	width: 100%;
+	padding: 0 20px;
+}
+.ldonor__adv {
+	width: 100%;
+}
+@media screen and (max-width: 1200px) {
+	.ldonor__container {
+		grid-template-columns: 1fr;
+		grid-gap: 20px;
+	}
+	.ldonor__menu {
+		padding: 0;
+	}
+}

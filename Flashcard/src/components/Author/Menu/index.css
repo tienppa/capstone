@@ -1,0 +1,49 @@
+.creater-menu {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 10px;
+	margin: 0 0 25px 0;
+}
+.creater-form-wrap {
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+.creater-button-item {
+	margin-right: 10px;
+}
+.creater-search-wrap {
+	width: 100%;
+}
+.scroll-icon {
+	height: 40px;
+	width: 40px;
+	border: 4px;
+	color: #eeeeee;
+	line-height: 40px;
+	text-align: center;
+	font-size: 14px;
+	background-color: #1088e9;
+	z-index: 10000 !important;
+}
+.scroll-to-top {
+	position: fixed;
+	bottom: 70px;
+	right: 70px;
+	animation: fadeIn 700ms ease-in-out 1s both;
+	cursor: pointer;
+	z-index: 10000 !important;
+}
+
+@media screen and (max-width: 767px) {
+	.creater-menu {
+		grid-template-columns: 1fr;
+	}
+	.creater-button-item {
+		max-width: 175px;
+	}
+	.creater-search-wrap {
+		max-width: 360px;
+	}
+}

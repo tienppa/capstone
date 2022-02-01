@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+.latest-container {
+	width: 100%;
+	min-height: 500px;
+	background-color: #f6f7fb;
+	display: grid;
+	grid-template-columns: 1fr 3fr 1fr;
+}
+.latest-menu {
+	width: 100%;
+	padding: 10px 0 0 10px;
+}
+/* card style  */
+.card-content--hover:hover {
+	box-shadow: 0 10px 10px -5px #cedaf3;
+	cursor: pointer;
+}
+.card-content__wrap {
+	/* max-width: 1024px; */
+	width: 100%;
+	min-height: 80px;
+}
+.latest-crumb__wrap {
+	display: flex;
+	align-items: center;
+	margin-top: 10px;
+	padding: 10px 30px;
+	font-size: 14px;
+}
+.latest-crumb__wrap > div {
+	margin-right: 20px;
+	background-color: #ffdc62;
+	color: #4257b2;
+	position: relative;
+}
+.link-item {
+	color: #40a9ff;
+}
+.latest-content--padding {
+	padding: 0 10px;
+}
+.card-content__main {
+	margin-bottom: 20px;
+}
+.card-content__text {
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+.card-content__author {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.card-content__author-name {
+	display: block;
+	font-weight: 500;
+	display: -webkit-box;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	max-width: 170px;
+}
+.card-content__author-name:hover {
+	cursor: pointer;
+	color: #28a7a7;
+}
+.card-content__date {
+	display: block;
+}
+.empty-container {
+	width: 100%;
+	min-height: 300px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+/* new style */
+.menu-child__wrap {
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 10px;
+	border: 1px solid #abceee;
+	border-radius: 5px;
+}
+.menu-child__wrap > label {
+	position: relative;
+	top: -20px;
+	left: 20px;
+	border-radius: 5px;
+}
+.menu-child__tag {
+	min-width: 80px;
+}
+
+/* right style */
+.triangle {
+	height: 22px;
+	position: absolute;
+	left: 100%;
+	top: 100%;
+	transform: translateX(-100%);
+	transform: translateY(-100%);
+}
+.triangle--right {
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-left: 10px solid #ffdc62;
+}
+
+@media screen and (max-width: 767px) {
+	.latest-container {
+		grid-template-columns: 1fr;
+		grid-gap: 20px;
+	}
+}

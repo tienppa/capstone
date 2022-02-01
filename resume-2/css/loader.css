@@ -1,0 +1,33 @@
+/* preloader */
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1500;
+  background-color: var(--bg-black-50);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.preloader .loader {
+  width: 40px;
+  height: 40px;
+  border: 5px solid var(--skin-color);
+  border-radius: 50%;
+  border-right: 5px solid transparent;
+  animation: spinLoader 1s ease infinite;
+}
+.preloader .loader-text {
+  font-size: 16px;
+  color: var(--text-black-600);
+  line-height: 26px;
+}
+@keyframes spinLoader {
+  to {
+    transform: rotate(360deg);
+  }
+}

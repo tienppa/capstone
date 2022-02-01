@@ -1,0 +1,34 @@
+.ldonor__main-adv {
+	width: 100%;
+}
+.ldonor__adv-card {
+	max-width: 950px;
+	width: 100%;
+	margin-bottom: 15px;
+	border-radius: 5px;
+	background-image: rgb(245, 246, 253);
+}
+.ldonor__adv-tools {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+.ldonor__adv-button:hover {
+	background-color: #7b78f8;
+	color: #ffffff;
+}
+.ldonor__adv-card-img {
+	max-width: 150px;
+	max-height: 100px;
+	width: 100%;
+}
+.adv-purple {
+	color: #bd93f9;
+}
+@supports (-webkit-background-clip: text) {
+	.adv-purple {
+		color: transparent;
+		background-image: linear-gradient(40deg, #ff6ec4, #7873f5);
+		-webkit-background-clip: text;
+	}
+}

@@ -1,0 +1,33 @@
+.quiz-layout__content-main {
+	width: 100%;
+	display: flex;
+	min-height: 500px;
+}
+.quiz-layout__content-one {
+	width: 75%;
+	padding: 5px;
+}
+.quiz-layout__content-two {
+	width: 25%;
+}
+.review-list__info {
+	width: 300px;
+	margin-bottom: 15px;
+}
+.tag-point {
+	min-width: 50px;
+}
+.tag-subject {
+	min-width: 80px;
+}
+@media screen and (max-width: 1279px) {
+	.quiz-layout__content-main {
+		flex-direction: column-reverse;
+	}
+	.quiz-layout__content-one {
+		width: 100%;
+	}
+	.quiz-layout__content-two {
+		width: 100%;
+	}
+}

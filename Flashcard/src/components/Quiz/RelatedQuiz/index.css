@@ -1,0 +1,16 @@
+.quiz-layout__content-main {
+	width: 100%;
+}
+.quiz-layout__content-quizs--wrap {
+	max-width: 1024px;
+	width: 100%;
+}
+.quiz-layout__content-quiz {
+	width: 100%;
+	max-width: 900px;
+}
+.quiz-layout__content-card {
+	margin-bottom: 15px;
+	border-radius: 5px;
+	position: relative;
+}

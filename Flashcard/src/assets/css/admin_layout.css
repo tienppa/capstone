@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+.fcard-container {
+	width: 100%;
+	background-color: rgb(246, 247, 251);
+}
+.fcard-main {
+	max-width: 100%;
+	min-height: 850px;
+	display: grid;
+	grid-template-columns: 1fr 4fr;
+}
+.fcard-menu {
+	font-family: "Poppins", sans-serif;
+	padding: 20px;
+	background-color: rgb(255, 255, 255);
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	width: 250px;
+}
+.fcard-item {
+	max-width: 300px;
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	padding: 15px;
+	border-radius: 10px;
+	color: #555555;
+	transition: all 0.15s ease-in;
+}
+.fcard-item:hover {
+	color: white;
+	background-color: #7a6ed2;
+}
+.fcard-icon {
+	font-size: 16px;
+	margin-right: 10px;
+}
+.fcard-text {
+	font-weight: 500;
+}
+.fcard-wrap {
+	max-width: 1024px;
+}
+/* main style for subject lession flashcard */
+.wrap-color {
+	margin-bottom: 50px;
+}
+.fcard-suggest {
+	margin: 20px 0 10px 0;
+}
+.fcard-suggest__title {
+	display: flex;
+	justify-content: space-between;
+	font-family: "Poppins", sans-serif;
+	font-size: 14px;
+	padding: 20px;
+	border-radius: 5px;
+	background-color: rgb(255, 255, 255);
+}
+.title-left {
+	font-weight: 600;
+}
+.title-right {
+	color: #3ccfcf;
+}
+
+/* fcard suggest list */
+.fcard-suggest__list {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(328px, 1fr));
+	grid-gap: 20px;
+}
+.fcard-suggest__link {
+	padding: 20px;
+	background-color: #ffffff;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.fcard-suggest__link:hover {
+	box-shadow: 0 5px 2px -2px rgb(206, 218, 243);
+}
+.fcard-suggest__item {
+	font-family: "Poppins", sans-serif;
+	max-height: 180px;
+}
+.fcard-suggest__header {
+	margin-bottom: 20px;
+}
+.fcard-suggest__name {
+	font-weight: 600;
+	padding-bottom: 10px;
+	/* limit text inline */
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: normal;
+	-webkit-line-clamp: 1;
+}
+.fcard-suggest__description {
+	color: #555;
+	font-size: 14px;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: normal;
+	-webkit-line-clamp: 3;
+	line-height: 24px;
+}
+.fcard-suggest__footer {
+	padding: 10px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.fcard-suggest__author {
+	padding: 5px 0;
+	font-size: 14px;
+	font-weight: 500;
+	cursor: pointer;
+	/* limit text inline */
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: normal;
+	-webkit-line-clamp: 1;
+}
+/* subject style */
+.fcard-suggest .ant-collapse-content > .ant-collapse-content-box {
+	padding: 0;
+}
+
+/* custom for item */
+
+@media screen and (max-width: 767px) {
+	.fcard-main {
+		grid-template-columns: 1fr;
+		grid-gap: 20px;
+	}
+	.fcard-menu {
+		width: 100%;
+		height: auto;
+		border-radius: 0;
+	}
+}
