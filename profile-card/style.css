@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #eeeeee;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  height: 400px;
+  width: 300px;
+  background-color: #fdfeff;
+  border-radius: 5px;
+  box-shadow: 5px 5px 20px grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+.profile-picture {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition-property: all;
+  transition-duration: 300ms;
+}
+.card:hover > .profile-picture {
+  margin-top: 30px;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  box-shadow: 5px 5px 20px grey;
+}
+.info-container {
+  width: 100%;
+  height: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 300ms;
+  transition-delay: 100ms;
+  transition-timing-function: cubic-bezier(0.65, 0, 0.35, 1);
+}
+.card:hover > .info-container {
+  flex: 1;
+}
+
+.name {
+  margin-top: 30px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.05rem;
+}
+.subtitle {
+  margin-top: 5px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+}
+.description {
+  margin-top: 17px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  font-style: italic;
+  font-weight: 500;
+  letter-spacing: 0.02rem;
+}
