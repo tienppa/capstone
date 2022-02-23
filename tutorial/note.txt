@@ -1,0 +1,68 @@
+<!Doctype> Phần khai báo chuẩn 
+<head></head> Phần khai báo ban đầu, khai báo về meta, title, css, js
+<body></body> Phần chứa nội dung của trang web
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+
+#Danh sách có thứ tự : làm mục lục
+<ol>
+  <li></li>
+</ol>
+#Danh sách không có thứ tự: làm menu
+<ul>
+  <li></li>
+</ul>
+
+#Thẻ semantic trong HTML5:
+<section> phân chia các phần riêng trong trang html như About, Contact
+<article> nội dung độc lập, có thể mang đi nơi khác đọc vẫn có thể hiểu: tiêu đề tóm tắt, tác giả.
+<nav>
+<aside>
+<main>
+<header>
+<footer>
+
+
+#Sự khác biệt giữa thẻ block và inline:
+- Thẻ inline có độ rộng bằng nội dung mà nó chứa, nếu có nhiều thẻ inline những thẻ inline nằm cùng trên một hàng, bị hạn chế css
+- Thẻ block có độ rộng full  phần tử chứa nó,  có nhiều thẻ block thì sẽ rớt xuống hàng.
+
+
+#Sự khác biệt class và id:
+- class : có thể trùng nhau, sử dụng cho nhiều phần tử giống nhau, có thể đặt nhiều tên .btn
+- id : là duy nhất , #btn
+
+#BEM block-element-modifier
+block__element--modifier
+block--modifier
+block__element
+block: laptop 
+element: mouse, keyboard
+modifier: big, small, blue
+
+#Thực hành BEM
+block: flash-message
+element: image, title, desc, button
+modifier: primary, secondary
+Ex: 
+flash-message__image, flash-message__title, flash-message__desc
+flash-message__title--secondary, flash-message__title--primary
+
+#Ví dụ thẻ 
+block: div, section, body, h1, h2, h3, h4, h5, h6, article
+inline: span, img, strong, em, i, b, a, button, sub, sup
+semantic: section, aside, main, article, nav, footer
+
+#Config github
+$ git config --global user.name "Tien Dat"
+$ git config --global user.email tienppa@gmail.com
